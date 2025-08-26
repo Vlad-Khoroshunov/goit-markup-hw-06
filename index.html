@@ -55,18 +55,96 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-icon-close" width="24" height="24">
+              <use href="./images/icons.svg#mobile-menu-x"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link current" href="./index.html" target="_blank">
+                  Studio 
+                </a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="#" target="_blank">
+                  Portfolio
+                </a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="#" target="_blank">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-address-list">
+              <li class="mobile-address-item">
+                <a class="mobile-address-link current" href="mailto:info@devstudio.com"
+                  target="_blank">info@devstudio.com</a>
+              </li>
+              <li class="mobile-address-item">
+                <a class="mobile-address-link" href="tel:+110001111111"
+                  target="_blank">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+          
+          <ul class="mobule-menu-social">
+            <li class="mobule-menu-social-icons">
+              <a href="https://www.instagram.com/" class="menu-social-icons">
+                <svg class="social-icons" width="16" height="16"> 
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              
+            </li>
+            <li class="mobule-menu-social-icons">
+              <a href="https://x.com" class="menu-social-icons">
+                <svg class="social-icons" width="16" height="16"> 
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+
+            </li>
+            <li class="mobule-menu-social-icons">
+              <a href="https://www.facebook.com/" class="menu-social-icons">
+                <svg class="social-icons" width="16" height="16"> 
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobule-menu-social-icons">
+              <a href="" class="menu-social-icons">
+                <svg class="social-icons" width="16" height="16"> 
+                  <use href="./images/icons.svg#icon-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="page">
       <!-- solutions-->
-      <section class="solution">
+      <section class="solution hidden">
         <div class="container">
           <h1 class="solution-title">Effective Solutions for Your Business</h1>
           <button class="solution-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- about -->
-      <section class="about">
+      <section class="about hidden">
         <div class="container">
           <h2 class="about-title visually-hidden">About</h2>
           <ul class="about-list">
@@ -123,7 +201,7 @@
         </div>
       </section>
       <!-- team -->
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -143,28 +221,28 @@
                     </a>
                     
                   </li>
-                <li class="social-icons-team">
-                <a href="https://x.com" class="link-socials">
-                  <svg class="icons-team" width="16" height="16"> 
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
+                  <li class="social-icons-team">
+                    <a href="https://x.com" class="link-socials">
+                      <svg class="icons-team" width="16" height="16"> 
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
 
-                </li>
-                <li class="social-icons-team">
-                  <a href="https://www.facebook.com/" class="link-socials">
-                    <svg class="icons-team" width="16" height="16"> 
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-icons-team">
-                  <a href="" class="link-socials">
-                    <svg class="icons-team" width="16" height="16"> 
-                      <use href="./images/icons.svg#icon-in"></use>
-                    </svg>
-                  </a>
-                </li>
+                  </li>
+                  <li class="social-icons-team">
+                    <a href="https://www.facebook.com/" class="link-socials">
+                      <svg class="icons-team" width="16" height="16"> 
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icons-team">
+                    <a href="" class="link-socials">
+                      <svg class="icons-team" width="16" height="16"> 
+                        <use href="./images/icons.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -297,7 +375,7 @@
         </div>
       </section>
       <!-- portfolio -->
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -391,7 +469,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container container-footer">
         <div class="container-footer-logo">
           <a class="logo logo-footer" href="./index.html"
@@ -452,7 +530,7 @@
       </div>
     </footer>
 
-    <div class="modal" data-modal>
+    <div class="modal hidden" data-modal>
         <div class="modal-wrapper">
             <button class="modal-close" type="button" data-modal-close>
                 <svg class="modal-close-svg" width="8" height="8">
@@ -530,6 +608,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 
