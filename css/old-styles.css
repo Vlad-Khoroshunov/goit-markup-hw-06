@@ -137,7 +137,7 @@ button{
   color: #404bbf;
 } */
 
-/* Solution */
+/* Solution
 
 .solution {
   background-color: #2e2f42;
@@ -185,11 +185,11 @@ button{
 .solution-button:hover,
 .solution-button:focus{
   background-color: #404bbf;
-}
+} */
 
 /* About */
 
-.about{
+/* .about{
   padding: 120px 0;
 }
 .about-title{
@@ -249,18 +249,18 @@ button{
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-}
+} */
 
 /* Our Team */
 
 
 
-.team{
+/* .team{
   background-color: #f4f4fd;
   padding: 120px 0;
-}
+} */
 
-
+/* 
 .team-title{
   font-weight: 700;
   font-size: 36px;
@@ -270,7 +270,7 @@ button{
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 72px;
-}
+} */
 
 .team-list{
   display: flex;
@@ -286,7 +286,7 @@ button{
   background-color: #fff;
 
 }
-.team-subtitle{
+/* .team-subtitle{
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -294,7 +294,7 @@ button{
   text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
-}
+} */
 
 .team-block{
   padding: 32px 0;
@@ -324,19 +324,19 @@ button{
 }
 
 .social-team {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 24px; */
   fill: #f4f4fd;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 8px;
 }
-.team-text{
+/* .team-text{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-}
+} */
 
 /* Our Portfolio */
 
