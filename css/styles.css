@@ -48,7 +48,7 @@ button{
 /* common */
 
 .container{
-  padding:0 15px;
+  padding:0 16px;
   max-width: 320px;
   margin: 0 auto;
 }
@@ -121,7 +121,7 @@ button{
     .header-nav-list{
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 40px;
     }
 
     .header-address{
@@ -285,11 +285,12 @@ button{
 }
 
 
-
+.mobile-address-link.current,
 .mobile-menu-nav-link.current {
     position: relative;
     color: #404BBF;
 }
+
 
 .mobile-address-list {
     display: flex;
@@ -297,7 +298,6 @@ button{
     justify-content: flex-start;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 48px;
 }
 
 .mobile-address-link {
@@ -323,6 +323,7 @@ button{
 .mobule-menu-social {
     display: flex;
     gap: 40px;
+    margin-top: 48px;
 }
 
 .social-icons {
@@ -378,8 +379,9 @@ button{
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 320px;
-    margin: 0 auto;
+    max-width: 216px;
+    margin: 0 auto 72px;
+    
 }
 
 .solution-button {
@@ -421,7 +423,8 @@ button{
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
-        margin-bottom: 36px;
+        margin: 0 auto 36px;
+        
     }
 }
 
@@ -441,11 +444,13 @@ button{
             url(../images/desk-hero1@2x.jpg) 2x
             );
     } 
+
+    .solution-title {
+    margin: 0 auto 48px;    
+    }
 }
 
-.solution-title {
-    margin-bottom: 48px;
-}
+
 
 /* about */
 
@@ -471,7 +476,7 @@ button{
 }
 
 .about-subtitle {
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -485,7 +490,7 @@ button{
     font-weight: 500px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -601,7 +606,6 @@ button{
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-top: 8px;
 }
 
 .social-icons-team {
@@ -633,11 +637,18 @@ button{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 24px;    
+        gap: 24px;
+        row-gap: 64px;    
     }
 
     .team-item {
         flex: 0 0 calc((100% - 24px) / 2); 
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team {
+        padding: 120px 0;
     }
 }
 
@@ -713,6 +724,10 @@ button{
         flex: 0 0 calc((100% - 24px) / 2);
         max-width: 356px;
     }
+
+    .portfolio-list {
+        row-gap: 72px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -739,6 +754,11 @@ button{
 
     .portfolio-item:hover .portfolio-overlay{
         transform: translateY(0%);
+    }
+
+    .portfolio-list {
+    column-gap: 24px;
+    row-gap: 48px;
     }
 }
 
@@ -788,7 +808,15 @@ button{
 }
 
 
-.footer-form-p,
+.footer-form-p {
+    width: 264px;
+    color: #f4f4fd;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
 .text-social-media {
     width: 264px;
     color: #f4f4fd;
@@ -910,6 +938,12 @@ button{
   .footer-input {
     width: 264px;
   }
+  .footer-form-p {
+    margin-left: -95px;
+    }
+  .footer-social-list {
+    justify-content: flex-start;
+    }
 }
 @media screen and (min-width: 1158px) {
   .page-footer {
@@ -954,13 +988,12 @@ button{
 
 .modal-wrapper {
     position: relative;
-    width: 408px;
     max-width: 90%;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 
-    padding: 48px 24px 24px;        
+    padding: 48px 16px 16px;        
 }
 
 .modal-close{
@@ -1155,4 +1188,10 @@ button{
 
 [data-modal].is-open {
   display: flex; 
+}
+
+@media screen and (min-width: 768px) {
+    .modal-wrapper{
+        padding: 48px 24px 24px;
+    }
 }
